@@ -1,7 +1,7 @@
 package Lab1;
 
 public class Ex4 {
-    public static void Calculator4() {
+    public static void calculator4() {
         double number1 = 3.6;
         double number2 = 4.1;
         double number3 = 5.9;

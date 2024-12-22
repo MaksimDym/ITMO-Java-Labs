@@ -11,10 +11,10 @@ public class Main {
         resultCalculator.calculateExpression();
 
         //3
-        Ex3.Calculator();
+        Ex3.calculator();
 
         //4
-        Ex4.Calculator4();
+        Ex4.calculator4();
 
         //5
         //Ex5 ex5 = new Ex5();

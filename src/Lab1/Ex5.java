@@ -4,22 +4,11 @@ import java.util.Scanner;
 
 
 class Ex5 {
-    public void readAndPrintIntegers() {
+    public void readAndPrintInteger() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите целые числа (для завершения ввода введите 'end'):");
-
-        while (true) {
-            String input = scanner.nextLine();
-            if (input.equalsIgnoreCase("end")) {
-                break;
-            }
-            try {
-                int number = Integer.parseInt(input);
-                System.out.println(number);
-            } catch (NumberFormatException e) {
-                System.out.println("Некорректный ввод. Пожалуйста, введите целое число.");
-            }
-        }
+        System.out.println("Введите целое число:");
+        String input = scanner.nextLine();
+        System.out.println(input);
         scanner.close();
     }
 }
