@@ -17,6 +17,41 @@ public class City {
         this.country=country;
     }
 
+
+    public String getName() {
+        return name;
+    }
+
+    public int getPopulation() {
+        return population;
+    }
+
+    public double getArea() {
+        return area;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPopulation(int population) {
+        this.population = population;
+    }
+
+    public void setArea(double area) {
+        this.area = area;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+
     @Override
     public  String toString(){
         return "City{" +
@@ -26,5 +61,11 @@ public class City {
                 ", country='" + country + '\'' +
         '}';
     }
-    }
+
+
+
+
+
+
+}
 

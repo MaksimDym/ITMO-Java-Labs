@@ -43,30 +43,31 @@ public class Calculator {
 
         // ////////////////////////////////////////////////
 
-        public int divide(int a, int b) {
+        public static void divide(int a, int b) {
             if (b == 0) {
                 System.out.println("Деление на ноль невозможно");
-                return 0;
+
             } else {
-                return a / b;
+                System.out.println((double)a / b);
             }
         }
 
-            public long divide(long a, long b){
+            public static void divide(long a, long b){
                 if (b == 0) {
                     System.out.println("Деление на ноль невозможно");
-                    return 0;
+
                 } else {
-                    return a / b;
+                    System.out.println((double)a / b);
+
                 }
             }
 
-                public double divide(double a, double b){
+                public static void divide(double a, double b){
                 if (b == 0) {
                     System.out.println("Деление на ноль невозможно");
-                    return 0;
+
                 } else {
-                    return a / b;
+                    System.out.println(a / b);
                 }
             }
 
