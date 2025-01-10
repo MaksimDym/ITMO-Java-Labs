@@ -6,14 +6,10 @@ import java.util.Scanner;
 
 public class ArrayHandler {
     private int[] array;
-    public void initializeArray(int length) {
-        array = new int[length];
-        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Numbers of array:");
-        for (int i = 0; i < length; i++) {
-            array[i] = scanner.nextInt();
-        }
+    public void initializeArray(int[] inputArray) {
+        array = new int[inputArray.length];
+        System.arraycopy(inputArray, 0, array, 0, inputArray.length);
     }
 
     public int[] getArray() {

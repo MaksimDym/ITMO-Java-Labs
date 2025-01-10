@@ -9,22 +9,25 @@ public class NumberComparison {
 
     public static int[] readNumbers() {
         Scanner scanner = new Scanner(System.in);
-        int[] numbers = new int[3];
+        System.out.print("Введите количество чисел: ");
+        int count = scanner.nextInt();
 
-        System.out.print("Введите первое число: ");
-        numbers[0] = scanner.nextInt();
+        int[] numbers = new int[count];
 
-        System.out.print("Введите второе число: ");
-        numbers[1] = scanner.nextInt();
-
-        System.out.print("Введите третье число: ");
-        numbers[2] = scanner.nextInt();
+        for (int i = 0; i < count; i++) {
+            System.out.print("Введите число " + (i + 1) + ": ");
+            numbers[i] = scanner.nextInt();
+        }
 
         return numbers;
     }
 
-    public static boolean checkConditions(int firstNumber, int secondNumber, int thirdNumber) {
-        return secondNumber > firstNumber && thirdNumber > secondNumber;
+    public static boolean checkConditions(int[] numbers) {
+        if (numbers.length < 3) {
+            System.out.println("Недостаточно чисел для проверки условий.");
+            return false;
+        }
+        return numbers[1] > numbers[0] && numbers[2] > numbers[1];
     }
 
 

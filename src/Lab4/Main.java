@@ -1,17 +1,17 @@
 package Lab4;
 import java.util.Scanner;
 public class Main {
-   public static void main(String[] args){
+   public static void main(String[] args) {
        // Ex1.1
 
        // OddNumberPrinter printer = new OddNumberPrinter();
-      // printer.printOddNumbers();
+       // printer.printOddNumbers();
 
        // Ex1.2
 
-      // DivisibleNumbers.printDivisibleBy3();
-      // DivisibleNumbers.printDivisibleBy5();
-      // DivisibleNumbers.printDivisibleByBoth();
+       // DivisibleNumbers.printDivisibleBy3();
+       // DivisibleNumbers.printDivisibleBy5();
+       // DivisibleNumbers.printDivisibleByBoth();
 
        // Ex1.3
 
@@ -23,12 +23,15 @@ public class Main {
 
        // Ex1.4
 
-      // NumberComparison numberComparison = new NumberComparison();
-       // int[] numbers = NumberComparison.readNumbers();
-       //boolean result = NumberComparison.checkConditions(numbers[0], numbers[1], numbers[2]);
-       //System.out.println("Результат: " + result);
+       int[] numbers = NumberComparison.readNumbers();
 
-       // Ex1.5 + Ex1.6
+
+       if (NumberComparison.checkConditions(numbers)) {
+           System.out.println("Условия выполнены: второе число больше первого, а третье больше второго.");
+       } else {
+           System.out.println("Условия не выполнены.");
+
+           // Ex1.5 + Ex1.6
 
        /* ArrayChecker arrayChecker = new ArrayChecker();
 
@@ -44,7 +47,7 @@ public class Main {
         System.out.println("array2 = " + java.util.Arrays.toString(array2));
         System.out.println("Массив содержит число 1 или 3 ?  - " + result2); */
 
-        //Ex2.1
+           //Ex2.1
 
        /* int[] array = {1, 2, 3, 4, 5};
         if (ArrayUtils.isSorted(array)){
@@ -55,46 +58,57 @@ public class Main {
 
         */
 
-        // Ex2.2
+           // Ex2.2
 
-      /*Scanner scanner = new Scanner(System.in);
+       /* Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите длину массива: ");
+        int length = scanner.nextInt();
 
-       System.out.print("Array length: ");
-       int length = scanner.nextInt();
+        int[] inputArray = new int[length];
+        System.out.println("Введите элементы массива:");
+        for (int i = 0; i < length; i++) {
+            inputArray[i] = scanner.nextInt();
+        }
 
-       ArrayHandler arrayHandler = new ArrayHandler();
-       arrayHandler.initializeArray(length);
+        ArrayHandler handler = new ArrayHandler();
+        handler.initializeArray(inputArray);
 
-       arrayHandler.printArray();
-       */
+        handler.printArray(); /*
+
 
        //Ex2.3
 
-       /*int[] originalArray = {5, 6, 7, 2};
-       ArrayManipulator arrayManipulator = new ArrayManipulator(originalArray);
+      // int[] myArray = {1, 2, 3, 4, 5};
+       // ArrayManipulator manipulator = new ArrayManipulator(myArray);
 
-       System.out.print("Array 1: ");
-       arrayManipulator.printArray();
+       // System.out.println("Исходный массив:");
+       // manipulator.printArray();
 
-       arrayManipulator.swapFirstAndLast();
 
-       System.out.print("Array 2: ");
-       arrayManipulator.printArray(); */
+       // manipulator.swapFirstAndLast(myArray);
+
+       // System.out.println("Массив после обмена первого и последнего элемента:");
+       // manipulator.printArray();
+
 
        //Ex2.4
 
-       int[] originArray = {1, 2, 3, 1, 2, 4};
-       FirstUniqueNumberFinder finder = new FirstUniqueNumberFinder(originArray);
-       Integer firstUnique = finder.findFirstUnique();
+      /* FirstUniqueNumberFinder finder = new FirstUniqueNumberFinder();
+       int[] array = {2, 3, 5, 3, 2};
+       Integer uniqueNumber = finder.findFirstUnique(array);
 
-       if (firstUnique != null) {
-           System.out.println("Первое уникальное число: " + firstUnique);
+       if (uniqueNumber != null) {
+           System.out.println("Первое уникальное число: " + uniqueNumber);
        } else {
            System.out.println("Уникальных чисел нет.");
        }
-
-
+       */
+       }
    }
-
-
 }
+
+
+
+
+
+

@@ -9,16 +9,17 @@ public class ArrayManipulator {
         this.array = array;
     }
 
-    public void swapFirstAndLast() {
-        if (array.length > 1) {
-            int temp = array[0];
-            array[0] = array[array.length - 1];
-            array[array.length - 1] = temp;
+    public void swapFirstAndLast(int[] newArray) {
+        if (newArray.length > 1) {
+            int temp = newArray[0];
+            newArray[0] = newArray[newArray.length - 1];
+            newArray[newArray.length - 1] = temp;
         }
     }
 
     public void printArray() {
         System.out.println(Arrays.toString(array));
     }
+
 
 }
